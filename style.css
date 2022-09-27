@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex: 1;
+}
+
+.left-pane {
+    display: flex;
+    margin-top:-10px;
+    margin-left: -10px;
+    position: relative;
+}
+
+#plant {
+    position: relative;
+    
+}
+
+#odin-logo{
+    color:white;
+    font-size: 5rem;
+    position:absolute;
+    background-color: black;
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 230px;
+    left: 0;
+}
