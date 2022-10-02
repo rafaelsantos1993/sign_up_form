@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="macthing_password.js"></script>
 </head>
 <body>
     <div class = "left-pane">
@@ -33,7 +34,8 @@
                     <label for="email">Email*</label>
                     <input type="email" name="email" id="email" required>
                     <label for="password">Password*</label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password1" onkeyup='check();' required>
+                    <span id="message">Not Matching Password</span>
                 </div>
                 <div class="col2">
                     <label for="last-name">Last Name*</label>
@@ -41,7 +43,7 @@
                     <label for="phone">Phone Number</label>
                     <input type="tel" name="phone" id="phone">
                     <label for="cofirm-password">Confirm Password<label>
-                    <input type="password" name="confirm-password" id="confirm-password" required>
+                    <input type="password" name="confirm-password" id="password2" onkeyup='check();' required>
                 </div>
             </fieldset>
             <button>Create Account</button>
