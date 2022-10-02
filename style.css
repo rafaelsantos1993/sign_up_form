@@ -132,6 +132,9 @@ button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 100px;
 }
+button:hover{
+    cursor: pointer;
+}
 
 .log-in{
     margin-left:90px;
