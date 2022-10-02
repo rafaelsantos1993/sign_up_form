@@ -63,14 +63,23 @@ input:focus{
     outline:none;
     border-width: 2.5px;
     border-style: solid;
-    border-color: blue
+    border-top-color: blue;
+}
+
+input[type="password"]:invalid {
+    border-bottom-color: red;
+}
+
+input[type="password"]:invalid:first-child {
+    border-bottom-color: red;
+
 }
 
 input, label {
     display: block;
 }
 
-#confirm-password{
+#password2{
     margin-top: -20px;
 }
 
@@ -84,4 +93,10 @@ legend{
     padding-top: 70px;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+#message{
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: red;
 }
