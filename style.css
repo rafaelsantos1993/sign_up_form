@@ -49,6 +49,23 @@ fieldset{
     align-content: space-around;
 }
 
+input{
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+    box-shadow: none;
+    border-width: 2px;
+    border-style:solid;
+}
+
+input:focus{
+    outline:none;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: blue
+}
+
 input, label {
     display: block;
 }
@@ -61,4 +78,10 @@ label{
     font-family: monospace;
     font-size: 0.75rem;
     padding-top: 20px;
+}
+
+legend{
+    padding-top: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
