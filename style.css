@@ -1,8 +1,17 @@
+/*Defines the font for the odin logo*/
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url("assets/Norse-Bold.otf");
+}
+
 body{
     display: flex;
     flex: 1;
     background-color: rgb(252, 252, 252);
 }
+/*For the left side of the website, with the plant
+and the logo*/
 
 .left-pane {
     display: flex;
@@ -17,18 +26,20 @@ body{
 
 #odin-logo{
     color:white;
-    font-size: 5rem;
+    font-size: 6.5rem;
     position:absolute;
     background-color: black;
-    opacity: 50%;
+    opacity: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     top: 230px;
     left: 0;
+    font-family: Norse-Bold;
 }
 
+/*Right side, with the quote and form*/
 .hero{
     margin-top: 100px;
     padding: 3px 50px 40px 50px;
@@ -36,6 +47,8 @@ body{
     font:bold;
     text-align: justify;
 }
+
+/*form style*/
 
 fieldset{
     background-color: #fff;
@@ -48,6 +61,8 @@ fieldset{
     gap: 80px;
     align-content: space-around;
 }
+
+/*input and labels style*/
 
 input{
     width: 250px;
@@ -99,4 +114,30 @@ legend{
     font-family: monospace;
     font-size: 0.75rem;
     color: red;
+}
+
+/*button and last login phrase*/
+
+button {
+    width: 200px;
+    height: 45px;
+    background-color:rgb(0, 99, 0);
+    color: #fff;
+    border-color: black;
+    border-width: 2.5;
+    border-radius: 8px;
+    margin:40px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+}
+
+.log-in{
+    margin-left:90px;
+    margin-top: -38px;
+}
+
+.log-in> a {
+    color:rgb(0,99,0)
 }
